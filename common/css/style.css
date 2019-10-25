@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(-45deg, #3494E6, #EC6EAD) fixed;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+.header {
+    height: 25%;
+    position: relative;
+    text-align: center;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+.header:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, black 5px, black 10px);
+}
+.header__title {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 80px;
+    line-height: 80px;
+    margin: 5% 0;
+}
+.header__comment {
+    margin: 5% 0;
+}
+
+.contents {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contents__title {
+    display: block;
+    margin-bottom: 40px;
+    padding: 18px 0;
+    color: #FFF;
+    background-color: #000;
+}
+.contents__articleList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 0.8em;
+    margin-bottom: 40px;
+}
+.contents__article {
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+    min-width: 0;
+
+}
+.contents__article--image {
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+}
+.contents__article--title {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 2px;
+    color: #FFF;
+    background-color: hsla(0, 0%, 20%, 0.3);
+    font-weight: bold;
+    transition: .4s;
+    margin-top: 10px;
+}
+.contents__article--title:hover {
+    background-color: hsla(0, 0%, 0%, 0.3);
+}
+.contents__article--title h3 {
+    line-height: 1.5em;
+    vertical-align: middle;
+}
+.footer {
+  text-align: center;
+}
