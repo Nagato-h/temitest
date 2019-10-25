@@ -8,18 +8,6 @@
   .header__comment {
       margin-bottom: 0;
   }
-  .contents {
-      width: 80%;
-      margin: 0 auto;
-      text-align: center;
-  }
-  .contents__title {
-      display: block;
-      margin-bottom: 40px;
-      padding: 18px 0;
-      color: #FFF;
-      background-color: #000;
-  }
   .contents__articleList {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -28,8 +16,5 @@
   }
   .contents__article {
       margin: 0.8em;
-  }
-  .footer {
-    text-align: center;
   }
 }
